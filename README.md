@@ -27,7 +27,7 @@ The Travel Web App allows users to manage a list of travel destinations they wis
 
 ## Deployment Link
 
-The web app is deployed and can be accessed [here](#).
+The web app is deployed and can be accessed [here](https://travel-5lh3xkxt6-ehmehs-projects.vercel.app/).
 
 ## Assumptions or Additional Features Implemented
 
