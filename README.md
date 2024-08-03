@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Travel Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Brief Description
 
-## Available Scripts
+The Travel Web App allows users to manage a list of travel destinations they wish to visit. Users can add new destinations, mark them as visited, and remove them from the list. Each destination includes a location, country, and description. The app uses local storage to persist the data, ensuring that the list is maintained across sessions.
 
-In the project directory, you can run:
+## Instructions on How to Use the Web App
 
-### `npm start`
+1. **Add a Destination**:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   - Navigate to the web app.
+   - Fill in the location, country, and description of the destination in the provided form.
+   - Click the "Add Destination" button to add the destination to your list.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **View Destinations**:
 
-### `npm test`
+   - All your added destinations will be displayed on the main page.
+   - You can filter the list to show all destinations, only visited destinations, or only not visited destinations by clicking the respective buttons.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Mark as Visited**:
 
-### `npm run build`
+   - Click the "Mark as Visited" button next to a destination to mark it as visited.
+   - A checkmark will appear indicating that the destination has been visited.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Remove a Destination**:
+   - Click the "Remove" button next to a destination to delete it from your list.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment Link
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The web app is deployed and can be accessed [here](#).
 
-### `npm run eject`
+## Assumptions or Additional Features Implemented
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Local Storage**: The app uses local storage to save the list of destinations, so your data persists even after refreshing the page or closing the browser.
+- **Responsive Design**: The app is designed to be responsive and works well on both desktop and mobile devices.
+- **Unique Identifiers**: Each destination is assigned a unique identifier based on the timestamp when it is added, ensuring that operations like marking as visited and removal work correctly.
+- **Formik and Yup**: The app uses Formik for form handling and Yup for form validation to ensure that all required fields are filled before a destination is added.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## If You Had More Time, What Would You Improve or Add?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Backend Integration**: Integrate a backend service to store destinations in a database, allowing users to access their data from any device.
+- **User Authentication**: Add user authentication to enable users to create accounts and manage their destinations securely.
+- **Enhanced UI/UX**: Improve the user interface and user experience with more interactive elements and animations.
+- **Additional Filters**: Implement more filtering options, such as sorting destinations by country or alphabetically.
+- **Editing Destinations**: Allow users to edit the details of a destination after it has been added.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## How to Run Locally
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the Repository**:
+   ```sh
+   git clone https://github.com/your-username/travel.git
+   cd travel-destinations
+   ```
