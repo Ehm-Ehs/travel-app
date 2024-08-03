@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Link, Route, Routes } from "react-router-dom";
+import styled from "styled-components";
+import Home from "./components/home";
+import DestinationForm from "./components/destinationForm";
 
-function App() {
+const Container = styled.div`
+  max-width: 800px;
+  margin: 0 auto;
+`;
+const Navbar = styled.nav`
+  margin: 20px;
+  a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+        <Navbar>
+          <Link to="/">Home</Link>
+          <Link to="/add">Add Destination</Link>
+        </Navbar>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/add" element={<DestinationForm />} />
+      </Routes>
+    </Container>
   );
-}
+};
 
 export default App;
